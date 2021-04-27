@@ -3,6 +3,7 @@ import Breadcrumb from '../common/breadcrumb';
 import data from '../../assets/data/listMenu';
 import Datatable from '../common/datatable'
 
+
 export class List_menu extends Component {
     render() {
         return (
