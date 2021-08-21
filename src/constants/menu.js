@@ -59,6 +59,18 @@ export const MENUITEMS = [
         title: 'Media', path: '/media', icon: Camera, type: 'link', active: false
     },
     {
+        title: 'Ads', icon: AlignLeft, type: 'sub', active: false, children: [
+            { path: '/ads/create-ad', title: 'Create Ad', type: 'link' },
+            { path: '/ads/list-ad', title: 'List Ad', type: 'link' },
+        ]
+    },
+    {
+        title: 'Posts', icon: AlignLeft, type: 'sub', active: false, children: [
+            { path: '/posts/create-post', title: 'Create Post', type: 'link' },
+            { path: '/posts/list-post', title: 'List Post', type: 'link' },
+        ]
+    },
+    {
         title: 'Menus', icon: AlignLeft, type: 'sub', active: false, children: [
             { path: '/menus/list-menu', title: 'List Menu', type: 'link' },
             { path: '/menus/create-menu', title: 'Create Menu', type: 'link' },

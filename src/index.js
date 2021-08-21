@@ -28,6 +28,9 @@ import Transactions_sales from './components/sales/transactions-sales';
 import ListCoupons from './components/coupons/list-coupons';
 import Create_coupons from './components/coupons/create-coupons';
 
+//ADs
+// import Listad from './components/ads/list-ad';
+
 //Pages
 import ListPages from './components/pages/list-page';
 import Create_page from './components/pages/create-page';
@@ -36,6 +39,10 @@ import List_menu from './components/menus/list-menu';
 import Create_menu from './components/menus/create-menu';
 import List_user from './components/users/list-user';
 import Create_user from './components/users/create-user';
+import Create_post from './components/posts/create-post';
+// import List_post from './components/posts/list-post';
+import Create_ad from './components/ads/create-ad';
+// import Listad from './components/ads/list-ad';
 import List_vendors from './components/vendors/list-vendors';
 import Create_vendors from './components/vendors/create.vendors';
 import Translations from './components/localization/translations';
@@ -88,6 +95,12 @@ class Root extends Component {
 
                             <Route path={`${process.env.PUBLIC_URL}/users/list-user`} component={List_user} />
                             <Route path={`${process.env.PUBLIC_URL}/users/create-user`} component={Create_user} />
+
+                            {/* <Route path={`${process.env.PUBLIC_URL}/posts/list-post`} component={List_post} /> */}
+                            <Route path={`${process.env.PUBLIC_URL}/posts/create-post`} component={Create_post} />
+
+                            <Route path={`${process.env.PUBLIC_URL}/ads/create-ad`} component={Create_ad} />
+                            {/* <Route path={`${process.env.PUBLIC_URL}/ads/list-ad`} component={Listad} /> */}
 
                             <Route path={`${process.env.PUBLIC_URL}/vendors/list_vendors`} component={List_vendors} />
                             <Route path={`${process.env.PUBLIC_URL}/vendors/create-vendors`} component={Create_vendors} />
