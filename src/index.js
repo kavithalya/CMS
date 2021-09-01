@@ -53,8 +53,7 @@ import Reports from './components/reports/report';
 import Invoice from './components/invoice';
 import Datatable from './components/common/datatable'
 import Login from './components/auth/login';
-
-
+// import { Getlist } from '../CMS_DEVELOPMENT/src/api/graphql/Resolver/cmsResolver';
 
 class Root extends Component {
     render() {

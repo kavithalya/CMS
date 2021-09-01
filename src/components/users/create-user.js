@@ -1,7 +1,6 @@
 import React, { Component,Fragment } from 'react'
 import Breadcrumb from '../common/breadcrumb';
 import Tabset_user from './tabset-user';
-
 export class Create_user extends Component {
     render() {
         return (

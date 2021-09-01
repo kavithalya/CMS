@@ -3,8 +3,6 @@ import ReactTable from 'react-table';
 import 'react-table/react-table.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-
 export class Datatable extends Component {
     constructor(props) {
         super(props)
@@ -61,9 +59,9 @@ export class Datatable extends Component {
     }
 
     render() {
-        const { pageSize, myClass, multiSelectOption, pagination } = this.props;
+        const { pageSize, myClass, multiSelectOption, pagination,hiddenColumns } = this.props;
         const { myData } = this.state
-
+        console.log("myData",myData);
         const columns = [];
         for (var key in myData[0]) {
 
@@ -155,6 +153,19 @@ export class Datatable extends Component {
             }
         )
         }
+        // if(hiddenColumns){
+        //     hiddenColumns : () => {
+        //         const hiddenColumnIds = [];
+        //         columns.foreach(col => {
+        //           if (col.isVisible === false) {
+        //             hiddenColumnIds.push(col.id);
+        //           }
+        //         })
+        //     }
+        // }
+        // if(hiddenColumns){
+        //         hiddenColumns={myData.columns(hiddenColumns).visible( false )}
+        // }
 
         return (
             <Fragment>
@@ -164,6 +175,8 @@ export class Datatable extends Component {
                     defaultPageSize={pageSize}
                     className={myClass}
                     showPagination={pagination}
+                    // hiddenColumns={myData.columns(hiddenColumns).visible( false )}
+                    
                 />
                 <ToastContainer />
             </Fragment>

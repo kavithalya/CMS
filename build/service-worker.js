@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/multikart-admin/precache-manifest.ec0975af0d6277a18c43aa10ad43197d.js"
+  "/multikart-admin/precache-manifest.b19d6ed6c8eb17c24952dfbf32c51ded.js"
 );
 
 self.addEventListener('message', (event) => {
