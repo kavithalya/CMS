@@ -28,8 +28,11 @@ import Transactions_sales from './components/sales/transactions-sales';
 import ListCoupons from './components/coupons/list-coupons';
 import Create_coupons from './components/coupons/create-coupons';
 
-//ADs
-// import Listad from './components/ads/list-ad';
+//abandonedcarts
+import abandonedcarts from './components/abandonedcarts/abandonedcarts';
+
+//Customers
+import customerinfo from './components/Customer/customerinfo';
 
 //Pages
 import ListPages from './components/pages/list-page';
@@ -77,6 +80,10 @@ class Root extends Component {
                             <Route path={`${process.env.PUBLIC_URL}/products/digital/digital-sub-category`} component={Digital_sub_category} />
                             <Route path={`${process.env.PUBLIC_URL}/products/digital/digital-product-list`} component={Digital_pro_list} />
                             <Route path={`${process.env.PUBLIC_URL}/products/digital/digital-add-product`} component={Digital_add_pro} />
+
+                            <Route path={`${process.env.PUBLIC_URL}/abandonedcarts/abandonedcarts`} component={abandonedcarts} />
+                           
+                            <Route path={`${process.env.PUBLIC_URL}/Customer/customerinfo`} component={customerinfo} />
 
                             <Route path={`${process.env.PUBLIC_URL}/sales/orders`} component={Orders} />
                             <Route path={`${process.env.PUBLIC_URL}/sales/transactions`} component={Transactions_sales} />
